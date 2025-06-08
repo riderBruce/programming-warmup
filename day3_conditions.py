@@ -1,3 +1,6 @@
+# day 3 - Conditions
+
+# Get name and set responses
 name = input("What's your name? ").strip().title()
 
 responses = {
@@ -7,6 +10,7 @@ responses = {
     "angry": "Look at me. Really? 😳 "
 }
 
+# Get an answer
 answer = input(f"How are you feeling today, {name}? ").strip().lower()
 
 
@@ -15,7 +19,7 @@ if answer in responses:
 else:
     print(f"Whoa, intense mood! Hang in there, {name} 🧨 ")
 
-
+# Check energy
 while True:
     try:
         energy_score = int(input(f"On a scale from 1 to 10, how was your energy today, {name}? "))
@@ -25,7 +29,7 @@ while True:
         elif 4 <= energy_score <= 7:
             print("You had a moderate energy today.")
             break
-        elif 1<= energy_score <= 3:
+        elif 1 <= energy_score <= 3:
             print("Maybe you need a rest.")
             break
         else:
