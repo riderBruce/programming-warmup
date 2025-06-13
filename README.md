@@ -25,7 +25,9 @@ This repo includes small, focused Python apps to reinforce key concepts:
 - ✅ To-Do List Manager (file I/O, functions)
 - ✅ Flashcard Quiz App (dictionaries, random, input)
 - ✅ Contact Book (JSON, validation)
-- 🔜 CSV Data App (coming next)
+- ✅ CSV Quiz App - Advanced Version
+  (random selection, replay loop, score logger, timer, and colored feedback)
+- 🔜 CSV Data App (next step)
 - 🧠 Mini-games and tools
 
 ---
