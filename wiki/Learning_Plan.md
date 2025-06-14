@@ -6,7 +6,7 @@
 - [x] Day 1–3: Lists, Functions, Conditions
 - [x] Day 4–6: File I/O and String Search
 - [x] Day 7–9: JSON and Quiz Games
-- [ ] Day 10: CSV practice
+- [x] Day 10: CSV practice
 - [ ] Day 11–15: Mini tools (converter, timer, logger)
 
 ### July
