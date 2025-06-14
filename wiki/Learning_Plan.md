@@ -25,7 +25,7 @@
 ## 🎥 CrashCourse Computer Science
 
 - [x] Ep.1 – What is a Computer?
-- [ ] Ep.2 – Electronic Logic Gates
+- [x] Ep.2 – Electronic Computing – [📄 Summary](../blob/main/Week_2_Tech_Video.md)
 - [ ] Ep.3 – CPU, ALU, Memory
 - [ ] Ep.4 – Programming Languages
 - [ ] Ep.5 – Operating Systems
