@@ -9,7 +9,7 @@ I'm practicing Python daily, learning software development skills, and building 
 ## 🔗 Learning Plan
 
 📅 View the full plan and checklist here:  
-👉 [**Learning Plan (Wiki)**](../../wiki/📅-Learning-Plan)
+👉 [**Learning Plan (Wiki)**](../../wiki/Learning-Plan)
 
 It includes:
 - Daily Python projects
