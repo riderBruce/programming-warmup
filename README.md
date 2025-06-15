@@ -25,7 +25,7 @@ This repo includes small, focused Python apps to reinforce key concepts:
 - ✅ To-Do List Manager (file I/O, functions)
 - ✅ Flashcard Quiz App (dictionaries, random, input)
 - ✅ Contact Book (JSON, validation)
-- ✅ CSV Quiz App - Advanced Version
+- ✅ CSV Quiz App - Advanced Version [📄 Detail](../wiki/Day_11_CSV_Budget_Tracker.md)
   (random selection, replay loop, score logger, timer, and colored feedback)
 - ✅ CSV Budget Tracker (DictReader, grouping, sorting, user input, file overwrite)
 - 🛠️ Mini-tools coming soon (unit converter, timer, logger)
