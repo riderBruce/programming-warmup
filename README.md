@@ -27,7 +27,7 @@ This repo includes small, focused Python apps to reinforce key concepts:
 - ✅ Contact Book (JSON, validation)
 - ✅ CSV Quiz App - Advanced Version
   (random selection, replay loop, score logger, timer, and colored feedback)
-- 🔜 CSV Data App (next step)
+- 🔜 CSV Data App (ing...)
 - 🧠 Mini-games and tools
 
 ---

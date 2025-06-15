@@ -7,7 +7,8 @@
 - [x] Day 4–6: File I/O and String Search
 - [x] Day 7–9: JSON and Quiz Games
 - [x] Day 10: CSV practice
-- [ ] Day 11–15: Mini tools (converter, timer, logger)
+- [x] Day 11: CSV Budget Tracker - [detail](../wiki/Day_11_CSV_Budget_Tracker.md)
+- [ ] Day 12–15: Mini tools (converter, timer, logger)
 
 ### July
 - [ ] CLI App with menu (contact manager v2)
