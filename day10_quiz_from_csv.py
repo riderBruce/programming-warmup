@@ -11,7 +11,6 @@ score_file = "quiz_scores.csv"
 def load_quiz_data(path):
     with open(path, "r") as file:
         # read csv data as a list of dictionaries [{a: aa, b: bbb}, {a: dse, b: def}, {} ... ]
-        # looks like each [ row {columns : value} {column: value} ... ],
         reader = csv.DictReader(file)
         return list(reader)
 
