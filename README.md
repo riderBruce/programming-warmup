@@ -29,7 +29,7 @@ This repo includes small, focused Python apps to reinforce key concepts:
   (random selection, replay loop, score logger, timer, and colored feedback)
 - ✅ CSV Budget Tracker (DictReader, grouping, sorting, user input, file overwrite)
 - ✅ Unit Converter CLI (temperature, length, weight, time, static currency rate with error handling and menus)
-- 🛠️ More mini-tools coming soon (timer, logger)
+- ✅ More mini-tools (timer, logger)
 
 ---
 

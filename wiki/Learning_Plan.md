@@ -9,7 +9,7 @@
 - [x] Day 10: CSV practice
 - [x] Day 11: CSV Budget Tracker – [📄 Detail](Day_11_CSV_Budget_Tracker.md)
 - [x] Day 12: Unit Converter
-- [ ] Day 13–15: Mini tools (timer, logger)
+- [x] Day 11–15: Mini tools (converter, timer, logger, journal)
 
 ### July
 - [ ] CLI App with menu (contact manager v2)
