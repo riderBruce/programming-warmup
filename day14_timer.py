@@ -31,18 +31,18 @@ def play_sound_async(file_path):
         print(f"An error occurred while trying to play sound: {e}")
 
 
-def play_song(path):
-    if not os.path.exists(path):
-        print(f"No Audio file. Just beep if no file given.")
-    try:
-        subprocess.run(["afplay", path], check=True)
-        print("Sound played (macOS).")
-    except FileNotFoundError:
-        print("Error: 'afplay' command not found. (This is a macOS command)")
-    except subprocess.CalledProcessError as e:
-        print(f"Error playing sound: {e}")
-    except Exception as e:
-        print(f"An unexpected error occurred: {e}")
+# def play_song(path):
+#     if not os.path.exists(path):
+#         print(f"No Audio file. Just beep if no file given.")
+#     try:
+#         subprocess.run(["afplay", path], check=True)
+#         print("Sound played (macOS).")
+#     except FileNotFoundError:
+#         print("Error: 'afplay' command not found. (This is a macOS command)")
+#     except subprocess.CalledProcessError as e:
+#         print(f"Error playing sound: {e}")
+#     except Exception as e:
+#         print(f"An unexpected error occurred: {e}")
 
 
 def stop_sound():
@@ -66,7 +66,9 @@ def stop_sound():
 
 def play_and_stop_song_by_input(path):
     play_sound_async(path)
-    input("Stop with any input. > ")
+    # input("Stop with any input. > ")
+    print(f"This song will be end after 10 seconds.")
+    time.sleep(10)
     stop_sound()
 
 
@@ -92,12 +94,10 @@ def print_csv_data(data: [dict]):
     print("-" * 50)
     for row in data:
         print("\t".join(str(v).ljust(12) for v in row.values()))
-    print("\n")
 
 
 # Bridge Functions
 def print_main_menus():
-    print("\n")
     print(f"Welcome to Timer & Reminder")
     print(f"1. Start a countdown timer")
     print(f"2. Schedule a reminder")
@@ -109,15 +109,19 @@ def start_a_countdown_timer():
     minutes_count = reuse.select_a_number("Select minutes. > ", 0, 1000)
     seconds_count = reuse.select_a_number("Select seconds. > ", 0, 59)
     total_seconds = minutes_count * 60 + seconds_count
+    threading.Thread(target=timer_async, args=(total_seconds,), daemon=True).start()
+
+
+def timer_async(total_seconds):
     for i in range(total_seconds, 1, -1):
         minutes_remain, seconds_remain = divmod(i, 60)
-        print(f"Count Down > {'{:02}'.format(minutes_remain)}:{'{:02}'.format(seconds_remain)}")
+        print(f"Count Down > {'{:02}'.format(minutes_remain)}:{'{:02}'.format(seconds_remain)}", flush=True)
         time.sleep(1)
     print(f"⏰ Time's up!")
     play_and_stop_song_by_input(file_path)
 
 
-def remind_schedule():
+def get_valid_timestamp_and_message():
     while True:
         input_time = str(input(f"Set future time stamp like 2025-06-18 15:00 > "))
         format_str = "%Y-%m-%d %H:%M"
@@ -131,9 +135,14 @@ def remind_schedule():
             continue
         break
     message = str(input(f"Input a note > "))
+    return timestamp, message
+
+
+def remind_schedule():
+    timestamp, message = get_valid_timestamp_and_message()
     data = {"timestamp": timestamp, "message": message}
     scheduler.append(data)
-    check_regularly(data)
+    threading. Thread(target=check_regularly, args=(data,), daemon=True).start()
 
 
 def check_regularly(data):
@@ -145,9 +154,10 @@ def check_regularly(data):
         remain_seconds = time_left.seconds
         hours, remainder = divmod(remain_seconds, 3600)
         minutes, seconds = divmod(remainder, 60)
-        time.sleep(3)
-        print(f"{data['message']} : Timestamp remains {days} days, {hours}:{minutes}:{seconds} 🔜")
+        time.sleep(10)
+        print(f"{data['message']} : Timestamp remains {days} days, {hours}:{minutes}:{seconds} 🔜", flush=True)
     print(f"{data['message']} is now")
+    play_and_stop_song_by_input(file_path)
 
 
 def view_current_reminders():
@@ -160,13 +170,9 @@ def main():
         print_main_menus()
         order = reuse.select_a_number("Select a number. ", 1, 4)
         if order == 1:
-            countdown_thread = threading.Thread(target=start_a_countdown_timer())
-            countdown_thread.start()
-            countdown_thread.join()
+            start_a_countdown_timer()
         elif order == 2:
-            reminder_thread = threading.Thread(target=remind_schedule())
-            reminder_thread.start()
-            reminder_thread.join()
+            remind_schedule()
         elif order == 3:
             view_current_reminders()
         elif order == 4:
