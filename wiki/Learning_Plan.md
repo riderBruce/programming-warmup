@@ -28,6 +28,7 @@
 
 - [x] Ep.1 – What is a Computer?
 - [x] Ep.2 – Electronic Computing – [📄 Summary](../wiki/Week_2_Tech_Video.md)
-- [ ] Ep.3 – CPU, ALU, Memory
-- [ ] Ep.4 – Programming Languages
-- [ ] Ep.5 – Operating Systems
+- [x] Ep.3 – Boolean Algebra and Logic Gate - [🧾 Summary](../wiki/Week_3_Tech_video.md)
+- [ ] Ep.4 – CPU, ALU, Memory
+- [ ] Ep.5 – Programming Languages
+- [ ] Ep.6 – Operating Systems
