@@ -34,7 +34,7 @@ def select_yes_or_no(prompt: str):
         prompt (str): The text shown to the user.
 
     Returns:
-        bool: True if the user enters yes, False if the user enter no.
+        bool: True if the user enters yes, False if the user enters no.
     """
     while True:
         user_input = input(prompt + " (Y/N): ").lower()
@@ -47,6 +47,15 @@ def select_yes_or_no(prompt: str):
 
 
 def print_csv_data(data: [dict]):
+    """
+    Print on screen neatly with headers and data.
+
+    Args:
+        data (list of dict): Data set to print
+
+    Returns:
+        None
+    """
     if not data:
         print("No data to display.")
         return
@@ -59,6 +68,15 @@ def print_csv_data(data: [dict]):
 
 
 def read_csv_file(file_name):
+    """
+    Open a CSV file and read its content as a list of dictionary.
+
+    Args:
+        file_name (str): Path to the CSV file.
+
+    Returns:
+        List of dict: the CSV data
+    """
     try:
         with open(file_name, newline='') as file:
             reader = csv.DictReader(file)
@@ -71,6 +89,16 @@ def read_csv_file(file_name):
 
 
 def add_dict_to_csv(file_name, data: dict):
+    """
+    Check the CSV file. If the file is not, make the header. And add new log to CSV file.
+
+    Args:
+        file_name (str): Path to the CSV file.
+        data (dict): The log entry to save.
+
+    Returns:
+        None
+    """
     try:
         if os.path.exists(file_name):
             with open(file_name, 'a', newline='', encoding='utf-8') as csvfile:
@@ -90,6 +118,17 @@ def add_dict_to_csv(file_name, data: dict):
 
 
 def overwrite_to_csv(file_name, data: list, headers: list):
+    """
+    Overwrite whole data at the CSV file as a list of dict.
+
+    Args:
+        file_name (str): Path to the CSV file.
+        data (list): Whole data to write on.
+        headers (list): The data headers sit on the top of the CSV file.
+
+    Returns:
+        None
+    """
     try:
         with open(file_name, 'w', newline='', encoding='utf-8') as csvfile:
             csv_writer = csv.writer(csvfile)
@@ -112,6 +151,16 @@ def overwrite_to_csv(file_name, data: list, headers: list):
 
 
 def is_valid_datetime(datetime_str, format_str):
+    """
+    Check the string is valid on datetime format.
+
+    Args:
+        datetime_str (str): The string for checking.
+        format_str (str): Datetime usual format.
+
+    Returns:
+        bool: True if the datetime string is valid, False otherwise.
+    """
     try:
         datetime.strptime(datetime_str, format_str)
         return True

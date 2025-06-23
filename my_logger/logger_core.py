@@ -55,10 +55,30 @@ def get_log_input():
 
 
 def add_data_in_memory(data: [dict], new_data: dict):
+    """
+    Add a new dictionary entry to an existing list of log entries (in-memory).
+
+    Args:
+        data (list of dict): The current list of log entries.
+        new_data (dict): The new log entry to append.
+
+    Returns:
+        None
+    """
     data.append(new_data)
 
 
 def save_csv_file(path, new_data: dict):
+    """
+    Saves a new log entry to a CSV file.
+
+    Args:
+        path (str): Path to the CSV file.
+        new_data (dict): The log entry to save.
+
+    Returns:
+        None
+    """
     reuse.add_dict_to_csv(path, new_data)
 
 
@@ -108,6 +128,15 @@ def search_date(data: [dict], key_date: str):
 
 # Bridge functions
 def open_csv_file(path):
+    """
+    Open a CSV file and reads its content as a list of dictionaries.
+
+    Args:
+        path (str): Path to the CSV file.
+
+    Returns:
+        Tuple of (list of dict, list of str): The data and headers.
+    """
     return reuse.read_csv_file(path)
 
 
