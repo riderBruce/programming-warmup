@@ -64,7 +64,10 @@ third note,2025-06-19,17:38:37,happy,walk the dog,He didn't want to walk
 ## 🙋🏻 About
 Built as part of a summer programming warm-up plan. See the full [Learning Plan](https://github.com/riderBruce/programming-warmup/wiki/Learning-Plan) for weekly milestones.
 
----
-## 📄 License
+## 🧠 Reflections
+- [Building My First CLI Tool](https://github.com/riderBruce/programming-warmup/wiki/Reflection:-Building-My-first-CLI-Tool)
 
+## 📄 License
 This project is licensed under the terms of the [MIT License](../LICENSE).
+
+---
