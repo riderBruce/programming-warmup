@@ -1,7 +1,6 @@
 # 📦 my_logger - Simple CSV Logging Tool
-
-![Python](https://img.shields.io/badge/python-3.9%2B-blue)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](../LICENSE)
+[![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/riderBruce/programming-warmup/blob/main/LICENSE)
 
 A lightweight and flexible Python tool to log journal entries, moods, tasks, and more - all saved to a CSV file. Built for quick note-taking and analysis.
 
@@ -20,10 +19,14 @@ A lightweight and flexible Python tool to log journal entries, moods, tasks, and
 
 ```text
 my_logger/
-├── __init__.py
-├── logger_core.py
-└── utils/
-    └── reusable_functions.py
+ ├── __init__.py
+ ├── logger_core.py
++├── input_handlers.py
++├── file_handlers.py
++├── log_actions.py
+ ├── menu.py
+ └── utils/
+     └── reusable_functions.py
 ```
 
 ## 🚀 Installation & Run
@@ -45,6 +48,27 @@ my_logger/
    ```plaintext
    log.csv
    ```
+
+## 🛠️ Usage Example
+Here’s what a typical interaction looks like when logging a new entry from the command line:
+```bash
+$ python -m my_logger
+Welcome to My Logger CLI Tool!
+Select a menu.
+1. Write log
+2. View recent logs
+3. Search logs by keyword
+4. Search logs by date
+5. Exit
+ > 1
+Title : morning walk  
+How are you today? (Mood) : happy  
+Task : exercise  
+Journal : Walked the dog in the park.
+
+Saved to log.csv!
+```
+
 
 ## 🧾 Example Log Entry (CSV)
 
@@ -68,6 +92,7 @@ Built as part of a summer programming warm-up plan. See the full [Learning Plan]
 - [Building My First CLI Tool](https://github.com/riderBruce/programming-warmup/wiki/Reflection:-Building-My-first-CLI-Tool)
 
 ## 📄 License
-This project is licensed under the terms of the [MIT License](../LICENSE).
+
+This project is licensed under the terms of the [MIT License](https://github.com/riderBruce/programming-warmup/blob/main/LICENSE)
 
 ---
