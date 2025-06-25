@@ -48,9 +48,8 @@ def search_key(data: [dict], key) -> [dict]:
     results = []
     try:
         for row in data:
-            for v in row.values():
-                if key in v:
-                    results.append(row)
+            if any(key in v for v in row.values()):
+                results.append(row)
     except Exception as e:
         print(e)
     return results
@@ -60,7 +59,7 @@ def search_date(data: [dict], key_date: str) -> [dict]:
     results = []
     try:
         for row in data:
-            if key_date == row['date']:
+            if row.get('date', 0) == key_date:
                 results.append(row)
     except Exception as e:
         print(e)

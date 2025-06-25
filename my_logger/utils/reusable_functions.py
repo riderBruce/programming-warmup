@@ -67,7 +67,7 @@ def print_csv_data(data: [dict]):
         print("\t".join(str(v).ljust(12) for v in row.values()))
 
 
-def read_csv_file(file_name):
+def read_csv_file(file_name) -> [dict]:
     """
     Open a CSV file and read its content as a list of dictionary.
 
@@ -88,7 +88,7 @@ def read_csv_file(file_name):
         print(e)
 
 
-def add_dict_to_csv(file_name, data: dict):
+def add_dict_to_csv(file_name, data: dict) -> None:
     """
     Check the CSV file. If the file is not, make the header. And add new log to CSV file.
 
@@ -117,7 +117,7 @@ def add_dict_to_csv(file_name, data: dict):
         print(e)
 
 
-def overwrite_to_csv(file_name, data: list, headers: list):
+def overwrite_to_csv(file_name, data: list, headers: list) -> None:
     """
     Overwrite whole data at the CSV file as a list of dict.
 
@@ -132,25 +132,22 @@ def overwrite_to_csv(file_name, data: list, headers: list):
     try:
         with open(file_name, 'w', newline='', encoding='utf-8') as csvfile:
             csv_writer = csv.writer(csvfile)
-            # dict to list
-            input_data = []
-            for d in data:
-                each_rows = []
-                for h in headers:
-                    each_rows.append(d[h])
-                input_data.append(each_rows)
-            # write on
+            # Write header
             csv_writer.writerow(headers)
-            csv_writer.writerows(input_data)
+            # Write rows
+            for entry in data:
+                row = [entry.get(key, "N/A") for key in headers]
+                csv_writer.writerow(row)
+
             print(f"Successfully overwrote to {file_name}.")
-            return
+
     except FileNotFoundError:
         print(f"Error : The file {file_name} was not found.")
     except Exception as e:
         print(e)
 
 
-def is_valid_datetime(datetime_str, format_str):
+def is_valid_datetime(datetime_str, format_str) -> bool:
     """
     Check the string is valid on datetime format.
 
