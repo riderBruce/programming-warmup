@@ -65,3 +65,10 @@ my_logger.egg-info/
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
+
+# data file
+*.pyc
+log.csv
+*.csv
+*.log
+.env
