@@ -7,7 +7,7 @@
 - [x] Day 4–6: File I/O and String Search
 - [x] Day 7–9: JSON and Quiz Games
 - [x] Day 10: CSV practice
-- [x] Day 11: CSV Budget Tracker – [📄 Detail](Day_11_CSV_Budget_Tracker.md)
+- [x] Day 11: CSV Budget Tracker – [📄 Detail](https://github.com/riderBruce/programming-warmup/blob/nodetest_1/wiki/Day_11_CSV_Budget_Tracker.md)
 - [x] Day 12: Unit Converter
 - [x] Day 11–15: Mini tools (converter, timer, logger, journal)
 - [x] **Day 16+:** Refactoring, Cleanup, Packaging
@@ -28,11 +28,11 @@
 
 ## 🎥 CrashCourse Computer Science
 
-- [x] Ep.1 – What is a Computer?
-- [x] Ep.2 – Electronic Computing – [📄 Summary](../wiki/Week_2_Tech_Video.md)
-- [x] Ep.3 – Boolean Algebra and Logic Gate - [🧾 Summary](../wiki/Week_3_Tech_video.md)
-- [x] Ep.4 – Representing Numbers and letters with Binary [🧾 Summary](../wiki/Crash_Course_4.md)
-- [x] Ep.5 – How Computers Calculate - the ALU [🧾 Summary](..wiki/Crash_Course_5.md)
+- [x] Ep.1 – What is a Computer? – [📄 Summary](https://github.com/riderBruce/programming-warmup/blob/nodetest_1/wiki/week1_log.md)
+- [x] Ep.2 – Electronic Computing – [📄 Summary](https://github.com/riderBruce/programming-warmup/blob/nodetest_1/wiki/Week_2_Tech_Video.md)
+- [x] Ep.3 – Boolean Algebra and Logic Gate - [🧾 Summary](https://github.com/riderBruce/programming-warmup/blob/nodetest_1/wiki/Week_3_Tech_video.md)
+- [x] Ep.4 – Representing Numbers and letters with Binary [🧾 Summary](https://github.com/riderBruce/programming-warmup/blob/nodetest_1/wiki/Crash_Course_4.md)
+- [x] Ep.5 – How Computers Calculate - the ALU [🧾 Summary](https://github.com/riderBruce/programming-warmup/blob/nodetest_1/wiki/Crash_Course_5.md)
 - [ ] Ep.0 – CPU, ALU, Memory
 - [ ] Ep.0 – Programming Languages
 - [ ] Ep.0 – Operating Systems
