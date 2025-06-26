@@ -32,6 +32,7 @@
 - [x] Ep.2 – Electronic Computing – [📄 Summary](../wiki/Week_2_Tech_Video.md)
 - [x] Ep.3 – Boolean Algebra and Logic Gate - [🧾 Summary](../wiki/Week_3_Tech_video.md)
 - [x] Ep.4 – Representing Numbers and letters with Binary [🧾 Summary](../wiki/Crash_Course_4.md)
+- [x] Ep.5 – How Computers Calculate - the ALU [🧾 Summary](..wiki/Crash_Course_5.md)
 - [ ] Ep.0 – CPU, ALU, Memory
 - [ ] Ep.0 – Programming Languages
 - [ ] Ep.0 – Operating Systems
