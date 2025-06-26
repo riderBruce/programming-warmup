@@ -35,7 +35,7 @@ This repo includes small, focused Python apps to reinforce key concepts:
 ## 🎥 Tech Videos
 
 I’m watching one CrashCourse Computer Science video per week and writing short summaries.  
-These notes are also posted in the [Wiki](../../wiki).
+These notes are also posted in the [Wiki](https://github.com/riderBruce/programming-warmup/wiki/Learning-Plan).
 
 ---
 
