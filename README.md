@@ -1,4 +1,4 @@
-#🧠 Programming Warm-Up – Summer Study Plan (COMPLETE)
+##🧠 Programming Warm-Up – Summer Study Plan (COMPLETE)
 
 Welcome! This repository documents my completed summer learning journey to prepare for the Post-Baccalaureate Diploma in Computer and Information Systems at Douglas College (Fall 2025).
 
