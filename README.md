@@ -1,4 +1,4 @@
-##🧠 Programming Warm-Up – Summer Study Plan (COMPLETE)
+## 🧠 Programming Warm-Up – Summer Study Plan (COMPLETE)
 
 Welcome! This repository documents my completed summer learning journey to prepare for the Post-Baccalaureate Diploma in Computer and Information Systems at Douglas College (Fall 2025).
 
@@ -8,7 +8,7 @@ This project is now complete and archived. You can browse the projects, review t
 
 ⸻
 
-##✅ What I Built
+## ✅ What I Built
 
 This repo includes hands-on Python projects focused on practical logic, modularity, file handling, and real-world application design:
 - ✅ To-Do List Manager (file I/O, functions)
@@ -43,7 +43,7 @@ programming-warmup/
 ```
 ⸻
 
-##🧪 Learning Plan (Archived)
+## 🧪 Learning Plan (Archived)
 
 📅 Full plan, checklist, and summaries:
 👉 Learning Plan
@@ -55,7 +55,7 @@ Included:
 
 ⸻
 
-##🎥 Computer Science Foundations
+## 🎥 Computer Science Foundations
 
 I reviewed foundational computing ideas with CrashCourse Computer Science and wrote notes.
 Topics included:
@@ -67,7 +67,7 @@ Topics included:
 
 ⸻
 
-##🧠 Reflections
+## 🧠 Reflections
 
 This warm-up plan helped me:
 - Build confidence writing CLI tools and organizing code into modules
@@ -77,7 +77,7 @@ This warm-up plan helped me:
 
 ⸻
 
-##📁 What’s Next
+## 📁 What’s Next
 
 I’m now shifting to the Douglas College Prep Project — a new repository focused on skills I’ll need in my real classes:
 - C# and Windows Forms
@@ -89,7 +89,7 @@ Thanks for reading. See you in the next repo!
 
 ⸻
 
-##🙋🏻 About
+## 🙋🏻 About
 
 I’m Youngil, a lifelong learner and former data analyst transitioning into software development.
 This repo reflects my dedication and curiosity. You can follow my next steps in the Douglas-Prep-2025 repository.
