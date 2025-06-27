@@ -67,6 +67,8 @@ Topics included:
 - [x] Ep.4 – Representing Numbers and letters with Binary [🧾 Summary](https://github.com/riderBruce/programming-warmup/blob/nodetest_1/wiki/Crash_Course_4.md)
 - [x] Ep.5 – How Computers Calculate - the ALU [🧾 Summary](https://github.com/riderBruce/programming-warmup/blob/nodetest_1/wiki/Crash_Course_5.md)
 
+---
+
 ##🧠 Reflections
 
 This warm-up plan helped me:
