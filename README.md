@@ -27,8 +27,7 @@ This repo includes hands-on Python projects focused on practical logic, modulari
 ⸻
 
 ## 📁 Project Structure
-
-```bash
+```text
 programming-warmup/
 ├── my_logger/             # Final CLI tool project
 │   ├── input_handlers.py
